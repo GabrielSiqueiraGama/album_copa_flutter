@@ -12,24 +12,24 @@ class TextStyles {
   String get primaryFont => 'Poppins';
   String get secondaryFont => 'MPlus1P';
 //Cor primaria
-  TextStyle get TextPrimaryFontRegular =>
+  TextStyle get textPrimaryFontRegular =>
       TextStyle(fontWeight: FontWeight.normal, fontFamily: primaryFont);
-  TextStyle get TextPrimaryFontMedium =>
+  TextStyle get textPrimaryFontMedium =>
       TextStyle(fontWeight: FontWeight.w500, fontFamily: primaryFont);
-  TextStyle get TextPrimaryFontSemiBold =>
+  TextStyle get textPrimaryFontSemiBold =>
       TextStyle(fontWeight: FontWeight.w600, fontFamily: primaryFont);
-  TextStyle get TextPrimaryFontBold =>
+  TextStyle get textPrimaryFontBold =>
       TextStyle(fontWeight: FontWeight.bold, fontFamily: primaryFont);
-  TextStyle get TextPrimaryFontExtraBold =>
+  TextStyle get textPrimaryFontExtraBold =>
       TextStyle(fontWeight: FontWeight.w800, fontFamily: primaryFont);
 //fonte secundaria
-  TextStyle get TextSecondaryFontFontRegular =>
+  TextStyle get textSecondaryFontFontRegular =>
       TextStyle(fontWeight: FontWeight.normal, fontFamily: secondaryFont);
-  TextStyle get TextSecondaryFontFontMedium =>
+  TextStyle get textSecondaryFontFontMedium =>
       TextStyle(fontWeight: FontWeight.w600, fontFamily: secondaryFont);
-  TextStyle get TextSecondaryFontFontBold =>
+  TextStyle get textSecondaryFontFontBold =>
       TextStyle(fontWeight: FontWeight.bold, fontFamily: secondaryFont);
-  TextStyle get TextSecondaryFontFontExtraBold =>
+  TextStyle get textSecondaryFontFontExtraBold =>
       TextStyle(fontWeight: FontWeight.w800, fontFamily: secondaryFont);
 }
 
