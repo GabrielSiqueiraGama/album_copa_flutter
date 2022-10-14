@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:dart_week/app/core/styles/colors_app.dart';
-import 'package:dart_week/app/core/styles/text_styles.dart';
+import 'package:dart_week/app/core/ui/styles/colors_app.dart';
+import 'package:dart_week/app/core/ui/styles/text_styles.dart';
 
 class ThemeConfig {
   ThemeConfig._();

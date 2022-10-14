@@ -1,4 +1,4 @@
-import 'package:dart_week/app/core/styles/colors_app.dart';
+import 'package:dart_week/app/core/ui/styles/colors_app.dart';
 import 'package:flutter/material.dart';
 
 class TextStyles {

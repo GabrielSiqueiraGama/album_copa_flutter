@@ -1,4 +1,7 @@
-import 'package:dart_week/app/core/styles/buttons_styles.dart';
+import 'package:dart_week/app/core/ui/styles/buttons_styles.dart';
+import 'package:dart_week/app/core/ui/styles/text_styles.dart';
+import 'package:dart_week/app/core/ui/widgets/button.dart';
+import 'package:dart_week/app/core/ui/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -33,7 +36,18 @@ class SplashPage extends StatelessWidget {
               style: ButtonStyles.i.primaryOutlineButton,
               child: const Text('salvar'),
             ),
-            const TextField()
+            const TextField(),
+            Button(
+                onPressed: () {},
+                style: ButtonStyles.i.primaryButton,
+                labelStyle: context.textStyles.textPrimaryFontBold,
+                label: 'Aoba meu rei'),
+            Button.primary(
+                onPressed: () {},
+                width: MediaQuery.of(context).size.width * .9,
+                height: 50,
+                label: 'label'),
+            RoundedButton(onPressed: () {}, icon: Icons.add)
           ],
         ),
       ),
