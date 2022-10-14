@@ -1,12 +1,20 @@
+import 'package:dart_week/app/core/ui/helpers/loader.dart';
+import 'package:dart_week/app/core/ui/helpers/messages.dart';
 import 'package:dart_week/app/core/ui/styles/buttons_styles.dart';
 import 'package:dart_week/app/core/ui/styles/text_styles.dart';
 import 'package:dart_week/app/core/ui/widgets/button.dart';
 import 'package:dart_week/app/core/ui/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
-class SplashPage extends StatelessWidget {
-  const SplashPage({Key? key}) : super(key: key);
+class SplashPage extends StatefulWidget {
+  const SplashPage({super.key});
 
+  @override
+  _SplashPageState createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage>
+    with Loader<SplashPage>, Messages<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,22 +25,32 @@ class SplashPage extends StatelessWidget {
         child: Column(
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () async {
+                showLoader();
+                await Future.delayed(Duration(seconds: 2));
+                hideLoader();
+              },
               style: ButtonStyles.i.yellowButton,
               child: const Text('salvar'),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                showError('deu erro meu chapa');
+              },
               style: ButtonStyles.i.primaryButton,
               child: const Text('salvar'),
             ),
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                showInfo('irra');
+              },
               style: ButtonStyles.i.yellowOutlineButton,
               child: const Text('salvar'),
             ),
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                showSucess('eits');
+              },
               style: ButtonStyles.i.primaryOutlineButton,
               child: const Text('salvar'),
             ),
