@@ -10,7 +10,7 @@ class ColorsApp {
   }
 
   Color get primary => const Color(0XFF791435);
-  Color get seconday => const Color(0XFFFDCE50);
+  Color get secondary => const Color(0XFFFDCE50);
   Color get yellow => const Color(0XFFFDCE50);
   Color get grey => const Color(0XFFCCCCCC);
   Color get greyDark => const Color(0XFF999999);

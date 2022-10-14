@@ -6,23 +6,12 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Theme(
-      data: ThemeData(
-        appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
-            elevation: 0,
-            centerTitle: true,
-            iconTheme: IconThemeData(
-              color: Colors.black,
-            ),
-            titleTextStyle: TextStyle(color: Colors.black)),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Pagina de splash'),
       ),
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Pagina de splash'),
-        ),
-        body: Center(
-            child: Column(
+      body: Center(
+        child: Column(
           children: [
             ElevatedButton(
               onPressed: () {},
@@ -44,8 +33,9 @@ class SplashPage extends StatelessWidget {
               style: ButtonStyles.i.primaryOutlineButton,
               child: const Text('salvar'),
             ),
+            const TextField()
           ],
-        )),
+        ),
       ),
     );
   }

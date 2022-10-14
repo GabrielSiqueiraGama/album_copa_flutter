@@ -1,3 +1,4 @@
+import 'package:dart_week/app/core/styles/colors_app.dart';
 import 'package:flutter/material.dart';
 
 class TextStyles {
@@ -31,8 +32,12 @@ class TextStyles {
       TextStyle(fontWeight: FontWeight.bold, fontFamily: secondaryFont);
   TextStyle get textSecondaryFontFontExtraBold =>
       TextStyle(fontWeight: FontWeight.w800, fontFamily: secondaryFont);
+
+  TextStyle get labelText => textSecondaryFontFontRegular.copyWith(
+        color: ColorsApp.i.greyDark,
+      );
 }
 
 extension TextsAppExtensions on BuildContext {
-  TextStyles get texts => TextStyles.i;
+  TextStyles get textStyles => TextStyles.i;
 }

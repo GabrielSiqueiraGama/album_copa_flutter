@@ -49,3 +49,7 @@ class ButtonStyles {
             TextStyles.i.textSecondaryFontFontExtraBold.copyWith(fontSize: 14),
       );
 }
+
+extension ButtonStylesExtension on BuildContext {
+  ButtonStyles get buttonStyles => ButtonStyles.i;
+}
